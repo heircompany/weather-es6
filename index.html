@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    <script src="https://google.github.io/traceur-compiler/bin/BrowserSystem.js"></script>
+    <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet dns-prefetch" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css">
+</head>
+<body>
+<header>
+    <h1>Get Your Weather, Dude</h1>
+</header>
+<div class="main">
+    <div id="search">
+        <label for="city">Your City</label>
+        <input type="text" id="city">
+        <button type="button">Get Weather</button>
+    </div>
+    <div id="load">Loading...</div>
+    <div id="weather">
+        <h1 id="weatherCity">Your City</h1>
+
+        <div id="weatherDescription">Your Weather</div>
+        <div id="weatherTemperature">Temperature</div>
+
+    </div>
+</div>
+<script type="module">
+    import './app.js';
+</script>
+</body>
+</html>
